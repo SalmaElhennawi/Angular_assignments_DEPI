@@ -1,0 +1,125 @@
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #fff;
+  color: #333;
+}
+
+.team-section {
+  position: relative;
+  padding: 80px 40px;
+  text-align: center;
+  overflow: hidden;
+}
+
+.background-text {
+  font-size: 100px;
+  color: #f0f0f0;
+  font-weight: 700;
+  position: absolute;
+  top: 70px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 0;
+  user-select: none;
+  pointer-events: none;
+  letter-spacing: 10px;
+}
+
+.section-header {
+  position: relative;
+  z-index: 1;
+}
+
+.section-header h2 {
+  font-size: 36px;
+  font-weight: 600;
+  margin-bottom: 5px;
+  position: relative;
+  display: inline-block;
+  z-index: 2;
+  color: #000;
+}
+
+.section-header h2 span {
+  color: #000;
+}
+
+.line {
+  width: 50px;
+  height: 2px;
+  background-color: #333;
+  margin: 10px auto 25px auto;
+}
+
+.section-header p {
+  color: #888;
+  font-size: 16px;
+  max-width: 650px;
+  margin: 0 auto 50px auto;
+  line-height: 1.6;
+}
+
+.team-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  position: relative;
+  z-index: 1;
+}
+
+.team-member {
+  width: 230px;
+}
+
+.team-member img {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+  object-fit: cover;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.08);
+}
+
+.team-member h3 {
+  font-size: 16px;
+  font-weight: 600;
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+
+.team-member p {
+  font-size: 14px;
+  color: #555;
+}
+
+.team-container {
+  display: grid;
+  gap: 15px;
+  padding: 0 50px;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+@media screen and (max-width: 575px) {
+  .team-container {
+    grid-template-columns: 1fr; 
+  }
+}
+
+@media screen and (min-width: 575px) and (max-width: 768px) {
+  .team-container {
+    grid-template-columns: 2fr; 
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .team-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1024px) {
+ .team-container {
+    grid-template-columns: repeat(4, 2fr); 
+  }
+}

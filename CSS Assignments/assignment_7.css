@@ -1,0 +1,178 @@
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: #fff;
+  color: #333;
+}
+
+.background-title {
+  font-size: 100px;
+  color: #f1f1f1;
+  font-weight: 700;
+  position: absolute;
+  top: 80px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 0;
+  user-select: none;
+  pointer-events: none;
+}
+
+.main-title {
+  text-align: center;
+  font-size: 32px;
+  font-weight: bold;
+  position: relative;
+  z-index: 1;
+  margin-bottom: 2px;
+}
+
+.line {
+  width: 50px;
+  height: 2px;
+  background-color: #20c997;
+  margin: 10px auto 25px auto;
+}
+
+.resume-section {
+  position: relative;
+  padding: 100px 40px 60px;
+}
+
+.resume-columns {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+  margin-bottom: 60px;
+}
+
+.column {
+  flex: 1;
+  max-width: 500px;
+}
+
+.card {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.date {
+  background-color: #20c997;
+  color: white;
+  padding: 5px 12px;
+  font-size: 12px;
+  border-radius: 5px;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.card h4 {
+  margin: 0;
+}
+
+.sub {
+  color: #e83e8c;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.skills h3 {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+  margin-bottom: 60px;
+  flex: 1;
+  max-width: 400px;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.skill p {
+  margin: 0 0 5px;
+  font-size: 14px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.bar {
+  height: 6px;
+  background: #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.fill {
+  height: 100%;
+  background: #20c997;
+}
+
+.download {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.download a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.download i {
+  margin-left: 5px;
+}
+
+.portfolio-section {
+  position: relative;
+  padding: 100px 40px;
+  background: #f8f9fa;
+}
+
+.portfolio-menu {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.portfolio-menu span {
+  margin: 0 15px;
+  font-weight: bold;
+  cursor: pointer;
+  color: #333;
+}
+
+.portfolio-menu .active {
+  color: #20c997;
+  border-bottom: 2px solid #20c997;
+  padding-bottom: 2px;
+}
+
+.portfolio-grid {
+    column-count: 3;
+    column-gap: 7px;
+}
+
+.profile-item {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 7px;
+    border-radius: 10px;
+}
+
+.profile-item img {
+    width: 100%;
+    display: block;
+    transition: 1s;
+}
+
