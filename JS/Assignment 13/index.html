@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Authentication</title>
+ 
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.7/css/bootstrap.rtl.min.css"
+      integrity="sha512-yZC61UaBAUGIbs/YDvp3XLZsh29taG1brQrFFJiCPHv+BoA6oETW0Zuc1xDKYHW/U3yZr/rqoiUZZG+iVOmB7w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      body {
+        color: white;
+        background-color: rgb(6, 6, 61);
+        padding: 20px;
+      }
+      .auth-section {
+        margin-bottom: 40px;
+      }
+      .form-container {
+        background-color: rgba(255, 255, 255, 0.1);
+        padding: 20px;
+        border-radius: 10px;
+        margin-bottom: 20px;
+      }
+      input {
+        display: block;
+        width: 100%;
+        margin-bottom: 15px;
+        padding: 10px;
+        border-radius: 5px;
+        border: none;
+      }
+      button {
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        background-color: #0d6efd;
+        color: white;
+        cursor: pointer;
+      }
+      button:hover {
+        background-color: #0b5ed7;
+      }
+      .card {
+        background-color: rgba(255, 255, 255, 0.1);
+        color: white;
+        margin-bottom: 20px;
+      }
+      .card img {
+        height: 200px;
+        object-fit: cover;
+      }
+      .card-body {
+        padding: 15px;
+      }
+      .message {
+        padding: 10px;
+        margin: 10px 0;
+        border-radius: 5px;
+        display: none;
+      }
+      .success {
+        background-color: #198754;
+      }
+      .error {
+        background-color: #dc3545;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="row">
+      <div class="col-md-6">
+        <form action="">
+          <h2>Sign Up</h2>
+          <input id="userName" type="text" placeholder="name">
+          <input id="userEmail" type="email" placeholder="email">
+          <input id="userPass" type="password" placeholder="password">
+          <input id="userRePass" type="password" placeholder="rePassword">
+          <input id="userPhone" type="text" placeholder="phone">
+          <button>Signup</button>
+        </form>
+      </div>
+      <div class="col-md-6">
+        <form action="">
+          <h2>Sign In</h2>
+          <input id="loginEmail" type="email" placeholder="email">
+          <input id="loginPass" type="password" placeholder="password">
+          <button>Signin</button>
+        </form>
+      </div>
+    </div>
+    
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.7/js/bootstrap.bundle.min.js"
+      integrity="sha512-Tc0i+vRogmX4NN7tuLbQfBxa8JkfUSAxSFVzmU31nVdHyiHElPPy2cWfFacmCJKw0VqovrzKhdd2TSTMdAxp2g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="main.js"></script>
+  </body>
+</html>
